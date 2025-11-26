@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="py-5 fade-in">
+    <div class="container">
+        <h2 class="fw-bold mb-4 text-center">About Us</h2>
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6 mb-4">
+                <img src="{{ url_for('static', filename='images/about.png') }}"
+                     class="img-fluid rounded shadow-sm"
+                     alt="About">
+            </div>
+
+            <div class="col-lg-6">
+                <p class="text-muted">
+                    InnovateHive helps businesses build modern digital products using clean design,
+                    advanced technologies, and meaningful user experiences.
+                </p>
+
+                <div class="row mt-4">
+                    <div class="col-6">
+                        <div class="p-3 bg-light rounded shadow-sm text-center">
+                            <h3 class="fw-bold mb-0">30+</h3>
+                            <p class="text-muted small mb-0">Projects Completed</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="p-3 bg-light rounded shadow-sm text-center">
+                            <h3 class="fw-bold mb-0">20+</h3>
+                            <p class="text-muted small mb-0">Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}

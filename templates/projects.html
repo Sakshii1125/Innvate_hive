@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="py-5 fade-in">
+    <div class="container">
+        <h2 class="fw-bold text-center mb-4">Our Projects</h2>
+        <p class="text-center text-muted mb-5">
+            Some of the work we’ve proudly delivered to our clients.
+        </p>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="project-card bg-white rounded shadow-sm overflow-hidden">
+                    <img src="{{ url_for('static', filename='images/project1.jpg') }}"
+                         class="img-fluid project-img"
+                         alt="Project 1">
+                    <div class="p-3">
+                        <h5 class="fw-bold mb-1">Khavane Kayaks</h5>
+                        <p class="text-muted small mb-2">
+                            Adventure tourism website with booking & gallery features.
+                        </p>
+                        <a href="#" class="text-primary small fw-bold">View Project →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="project-card bg-white rounded shadow-sm overflow-hidden">
+                    <img src="{{ url_for('static', filename='images/project2.jpg') }}"
+                         class="img-fluid project-img"
+                         alt="Project 2">
+                    <div class="p-3">
+                        <h5 class="fw-bold mb-1">Agro Assistant</h5>
+                        <p class="text-muted small mb-2">
+                            AI-powered crop recommendation and disease detection tool.
+                        </p>
+                        <a href="#" class="text-primary small fw-bold">View Project →</a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-md-4">
+                <div class="project-card bg-white rounded shadow-sm overflow-hidden">
+                    <img src="{{ url_for('static', filename='images/project3.jpg') }}"
+                         class="img-fluid project-img"
+                         alt="Project 3">
+                    <div class="p-3">
+                        <h5 class="fw-bold mb-1">Smart Billing App</h5>
+                        <p class="text-muted small mb-2">
+                            Mobile-friendly system for automated invoice and reports.
+                        </p>
+                        <a href="#" class="text-primary small fw-bold">View Project →</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,346 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- ============================
+        HERO SECTION
+================================= -->
+<section id="home" class="py-5 bg-light" style="min-height: 90vh; display: flex; align-items: center;">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- LEFT TEXT -->
+            <div class="col-lg-6 mb-4">
+                <h1 class="fw-bold display-5">Innovating Beyond Boundaries</h1>
+                <p class="lead mt-3">
+                    We build modern, fast and user-centric digital solutions for startups, businesses, and creators.
+                </p>
+                <a href="#contact" class="btn btn-primary btn-lg mt-3 px-4">Get in Touch</a>
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="col-lg-6 text-center">
+                <img src="{{ url_for('static', filename='images/hero.png') }}" 
+                     alt="Hero Illustration" 
+                     class="img-fluid" 
+                     style="max-height: 380px;">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ============================
+        ABOUT SECTION
+================================= -->
+<section id="about" class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- LEFT IMAGE -->
+            <div class="col-lg-6 mb-4">
+                <img src="{{ url_for('static', filename='images/about.png') }}"
+                     alt="About Illustration"
+                     class="img-fluid rounded shadow-sm">
+            </div>
+
+            <!-- RIGHT CONTENT -->
+            <div class="col-lg-6">
+                <h2 class="fw-bold mb-3">About Us</h2>
+                <p class="text-muted">
+                    InnovateHive helps businesses build modern digital products using clean design, 
+                    advanced technologies, and meaningful user experiences. With a focus on web 
+                    development, AI-powered tools, branding, and automation — we empower businesses 
+                    to grow with confidence.
+                </p>
+
+                <div class="row mt-4">
+                    <div class="col-6">
+                        <div class="p-3 bg-light rounded shadow-sm text-center">
+                            <h3 class="fw-bold mb-0">30+</h3>
+                            <p class="small text-muted mb-0">Projects Completed</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="p-3 bg-light rounded shadow-sm text-center">
+                            <h3 class="fw-bold mb-0">20+</h3>
+                            <p class="small text-muted mb-0">Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ============================
+        SERVICES SECTION
+================================= -->
+<section id="services" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="fw-bold text-center mb-4">Our Services</h2>
+        <p class="text-center text-muted mb-5">
+            We provide end-to-end digital solutions from design to deployment.
+        </p>
+
+        <div class="row g-4">
+
+            <!-- SERVICE 1 -->
+            <div class="col-md-4">
+                <div class="service-card p-4 bg-white rounded shadow-sm h-100 text-center">
+                    <img src="{{ url_for('static', filename='images/service1.png') }}" 
+                         class="img-fluid mb-3" 
+                         alt="Website Development" 
+                         style="height: 110px;">
+                    <h5 class="fw-bold mb-2">Website Development</h5>
+                    <p class="text-muted small">
+                        Fast, responsive & modern websites built using cutting-edge technologies.
+                    </p>
+                </div>
+            </div>
+
+            <!-- SERVICE 2 -->
+            <div class="col-md-4">
+                <div class="service-card p-4 bg-white rounded shadow-sm h-100 text-center">
+                    <img src="{{ url_for('static', filename='images/service2.png') }}" 
+                         class="img-fluid mb-3" 
+                         alt="AI Solutions" 
+                         style="height: 110px;">
+                    <h5 class="fw-bold mb-2">AI Solutions</h5>
+                    <p class="text-muted small">
+                        Chatbots, automation tools, predictive systems & custom AI models.
+                    </p>
+                </div>
+            </div>
+
+            <!-- SERVICE 3 -->
+            <div class="col-md-4">
+                <div class="service-card p-4 bg-white rounded shadow-sm h-100 text-center">
+                    <img src="{{ url_for('static', filename='images/service3.png') }}" 
+                         class="img-fluid mb-3" 
+                         alt="Graphics & Video Editing" 
+                         style="height: 110px;">
+                    <h5 class="fw-bold mb-2">Graphics & Video Editing</h5>
+                    <p class="text-muted small">
+                        Creative graphic design, branding, and motion video editing services.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ============================
+        PROJECTS SECTION
+================================= -->
+<section id="projects" class="py-5">
+    <div class="container">
+        <h2 class="fw-bold text-center mb-4">Our Projects</h2>
+        <p class="text-center text-muted mb-5">
+            Some of the work we’ve proudly delivered to our clients.
+        </p>
+
+        <div class="row g-4">
+
+            <!-- Project 1 -->
+            <div class="col-md-4">
+                <div class="project-card bg-white rounded shadow-sm overflow-hidden">
+                    <img src="{{ url_for('static', filename='images/project1.jpg') }}"
+                         class="img-fluid project-img"
+                         alt="Project 1">
+                    <div class="p-3">
+                        <h5 class="fw-bold mb-1">Khavane Kayaks</h5>
+                        <p class="text-muted small mb-2">
+                            Adventure tourism website with booking & gallery features.
+                        </p>
+                        <a href="#" class="text-primary small fw-bold">View Project →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-md-4">
+                <div class="project-card bg-white rounded shadow-sm overflow-hidden">
+                    <img src="{{ url_for('static', filename='images/project2.jpg') }}"
+                         class="img-fluid project-img"
+                         alt="Project 2">
+                    <div class="p-3">
+                        <h5 class="fw-bold mb-1">Agro Assistant</h5>
+                        <p class="text-muted small mb-2">
+                            AI-powered crop recommendation and disease detection tool.
+                        </p>
+                        <a href="#" class="text-primary small fw-bold">View Project →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-md-4">
+                <div class="project-card bg-white rounded shadow-sm overflow-hidden">
+                    <img src="{{ url_for('static', filename='images/project3.jpg') }}"
+                         class="img-fluid project-img"
+                         alt="Project 3">
+                    <div class="p-3">
+                        <h5 class="fw-bold mb-1">Smart Billing App</h5>
+                        <p class="text-muted small mb-2">
+                            Mobile-friendly system for automated invoice and reports.
+                        </p>
+                        <a href="#" class="text-primary small fw-bold">View Project →</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ============================
+        BLOGS SECTION
+================================= -->
+<section id="blogs" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="fw-bold text-center mb-4">Blogs</h2>
+        <p class="text-center text-muted mb-5">
+            Insights, stories, and updates from our team.
+        </p>
+
+        <div class="row g-4">
+
+            <!-- Blog 1 -->
+            <div class="col-md-4">
+                <div class="blog-card bg-white rounded shadow-sm overflow-hidden h-100">
+                    <img src="{{ url_for('static', filename='images/blog1.jpg') }}"
+                         class="img-fluid blog-img"
+                         alt="Blog Image 1">
+                    <div class="p-3">
+                        <h6 class="fw-bold">Why Every Business Needs a Modern Website</h6>
+                        <p class="text-muted small">
+                            A well-designed website increases trust, conversions, and brand value.
+                        </p>
+                        <a href="#" class="text-primary small fw-bold">Read More →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog 2 -->
+            <div class="col-md-4">
+                <div class="blog-card bg-white rounded shadow-sm overflow-hidden h-100">
+                    <img src="{{ url_for('static', filename='images/blog2.jpg') }}"
+                         class="img-fluid blog-img"
+                         alt="Blog Image 2">
+                    <div class="p-3">
+                        <h6 class="fw-bold">How AI is Transforming Small Businesses</h6>
+                        <p class="text-muted small">
+                            From automation to insights — AI is shaping the next era of growth.
+                        </p>
+                        <a href="#" class="text-primary small fw-bold">Read More →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog 3 -->
+            <div class
+<!-- ============================
+     TESTIMONIALS SECTION
+================================= -->
+<section id="testimonials" class="py-5">
+    <div class="container">
+        <h2 class="fw-bold text-center mb-4">What Our Clients Say</h2>
+        <p class="text-center text-muted mb-5">
+            A few words from our happy clients.
+        </p>
+
+        <div class="row g-4">
+
+            <!-- Testimonial 1 -->
+            <div class="col-md-4">
+                <div class="testimonial-card p-4 bg-white rounded shadow-sm h-100">
+                    <p class="text-muted">
+                        “Their hardworking and dedicated team helped me list my business on Google 
+                        and create a complete digital presence. Highly recommended!”
+                    </p>
+                    <div class="mt-3">
+                        <h6 class="fw-bold mb-0">Rohan Parab</h6>
+                        <small class="text-muted">Entrepreneur</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="col-md-4">
+                <div class="testimonial-card p-4 bg-white rounded shadow-sm h-100">
+                    <p class="text-muted">
+                        “InnovateHive built a clean, responsive website for my business. 
+                        The team’s creativity and quick delivery impressed me.”
+                    </p>
+                    <div class="mt-3">
+                        <h6 class="fw-bold mb-0">Shivani Kale</h6>
+                        <small class="text-muted">Business Owner</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="col-md-4">
+                <div class="testimonial-card p-4 bg-white rounded shadow-sm h-100">
+                    <p class="text-muted">
+                        “Super easy to work with! They handled everything from UI/UX to hosting 
+                        with clear communication throughout.”
+                    </p>
+                    <div class="mt-3">
+                        <h6 class="fw-bold mb-0">Omkar Patil</h6>
+                        <small class="text-muted">Freelancer</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ============================
+        CONTACT SECTION
+================================= -->
+<section id="contact" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="fw-bold text-center mb-4">Contact Us</h2>
+        <p class="text-center text-muted mb-5">
+            Have a project in mind? Let’s build something amazing together.
+        </p>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <form id="contactForm" method="POST" action="/send-message" class="p-4 bg-white rounded shadow-sm">
+
+                    <!-- Name -->
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Your Name</label>
+                        <input type="text" name="name" class="form-control" required>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Email</label>
+                        <input type="email" name="email" class="form-control" required>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Message</label>
+                        <textarea name="message" rows="4" class="form-control" required></textarea>
+                    </div>
+
+                    <!-- Button -->
+                    <button type="submit" class="btn btn-primary px-4 py-2">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+{% endblock %}
+
